@@ -1,9 +1,9 @@
 {
-  "name": "Shairport Sync",
-  "version": "0.0.3",
-  "slug": "shairport_sync",
-  "description": "Shairport Sync for Hass.io",
-  "url": "https://github.com/v3rm0n/addon-shairport-sync",
+  "name": "ssnc2mp3",
+  "version": "0.0.1",
+  "slug": "ssnc2mp3",
+  "description": "Shairport Sync to MP3 for Hass.io",
+  "url": "https://github.com/v3rm0nxofolowski/addon-ssnc2mp3",
   "startup": "application",
   "arch": [
     "aarch64",
@@ -18,7 +18,7 @@
   "host_network": true,
   "hassio_role": "default",
   "privileged": [],
-  "audio": true,
+  "audio": false,
   "map": [
     "config:rw"
   ],
@@ -40,7 +40,6 @@
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
-  },
-  "image": "maidok/{arch}-addon-shairport-sync"
+  }
 }
 
