@@ -1,0 +1,12 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Shairport Sync
+# Starts the Shairport Sync service
+# ==============================================================================
+# shellcheck disable=SC1091
+
+
+# Wait for Avahi to become available
+s6-svwait -u -t 5000 /var/run/s6/services/avahi
+
+exec /usr/local/bin/ssnc2mp3 
